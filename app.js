@@ -27,7 +27,9 @@ const createMessage = () => {
 }
 
 const sayMessage = () => {   
-    console.log(` Here is your motivating message: \n   ${createMessage()} \n Hope you enjoyed it!  Thanks for trying out my project. \n Run this again to get a new message! - AdvayCoder`);
+    console.log(`${createMessage()} \n \n Run this again to get a new message!`);
 }
 
-sayMessage();
+if (typeof window === 'undefined') {
+    sayMessage();
+}
